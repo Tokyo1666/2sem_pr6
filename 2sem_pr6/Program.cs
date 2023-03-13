@@ -14,10 +14,12 @@ namespace _2sem_pr6
        
             static void Main(string[] args)
         {
-           Persona persona = new Persona();
-            persona.Registret();
-            persona.Izvadit();
-            persona.PietiekLidzeklu();
+           Persona persona = new Persona(); // Izveido "Persona" klases instances objektu
+            persona.Registret(); // Izsauc "Registret" metodi "Persona" objektam
+            persona.Izvadit(); // Izsauc "Izvadit" metodi "Persona" objektam
+            persona.PietiekLidzeklu(); // Izsauc "PietiekLidzeklu" metodi "Persona" objektam
+
+            Console.ReadLine();
         }
     }
 }

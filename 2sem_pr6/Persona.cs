@@ -8,12 +8,13 @@ namespace _2sem_pr6
 {
     internal class Persona
     {
+        // Definējam publiskas mainīgās un klases
         public string vards;
         public string parole;
         public Grozs grozs;
         public double lidzekli;
 
-        public void Registret()
+        public void Registret() // Funkcija, kas reģistrē lietotāju
         {
             Console.WriteLine("Ievadiet Vards: ");
             vards = Console.ReadLine();
@@ -23,27 +24,27 @@ namespace _2sem_pr6
             Console.WriteLine("Ievadiet jusu lidzekli: ");
             lidzekli = double.Parse( Console.ReadLine());
 
-            Grozs grozs = new Grozs();
-            grozs.Registret();
+            grozs = new Grozs(); // Izveidojam jaunu grozu
+            grozs.Registret(); // Reģistrējam grozu
         }
 
-        public void PietiekLidzeklu()
+        public void PietiekLidzeklu() // Funkcija, kas pārbauda, vai lietotājam ir pietiekami daudz līdzekļu
         {
-            if (lidzekli <= grozs.Kopsumma() )
+            if (lidzekli >= grozs.Kopsumma())  // Ja lietotājam ir pietiekami daudz līdzekļu
             {
                 Console.WriteLine("Naudas OK");
                     
             }
             else
             {
-                Console.WriteLine("NOT OK");
+                Console.WriteLine("Naudas NOT OK");
             }
         }
 
-        public void Izvadit()
+        public void Izvadit() 
         {
-            Console.WriteLine("Vards: "+vards + "Parole" + parole + "lidzekli: " + lidzekli);
-            grozs.Izvadit();
+            Console.WriteLine("Vards: " + vards + " Parole: " + parole + " lidzekli: " + lidzekli);
+            grozs.Izvadit(); // Izvadam grozu
         }
     }
 }
