@@ -18,10 +18,9 @@ namespace _2sem_pr6
             Console.WriteLine("Ievadi preces cenu:");
             cena = double.Parse(Console.ReadLine());
         }
-        public void Izvadīt()
+        public void Izvadit()
         {
-            Console.WriteLine("Preces nosaukums: " + nosaukums);
-            Console.WriteLine(" Cena: " + cena + " EUR");
+            Console.WriteLine("Preces nosaukums: " + nosaukums + "Cena: " + cena + "EUR");           
         }
     }
 }

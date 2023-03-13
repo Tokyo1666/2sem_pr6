@@ -13,7 +13,7 @@ namespace _2sem_pr6
 
         public Prece[] preces;
 
-        public void Registret(int i)
+        public void Registret(Prece[] mypreces)
         {
            
 
