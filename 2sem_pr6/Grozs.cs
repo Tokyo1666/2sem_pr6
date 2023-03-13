@@ -2,19 +2,26 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace _2sem_pr6
 {
-    
-    internal class Program
+    internal class Grozs
     {
-       
-            static void Main(string[] args)
+        public int skaits;
+
+        public Prece[] preces;
+
+        public void Registret(int i)
         {
            
+
+        }
+
+        public void Kopsumma()
+        {
+
         }
     }
 }
