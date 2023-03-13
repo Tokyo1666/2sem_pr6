@@ -14,7 +14,10 @@ namespace _2sem_pr6
        
             static void Main(string[] args)
         {
-           
+           Persona persona = new Persona();
+            persona.Registret();
+            persona.Izvadit();
+            persona.PietiekLidzeklu();
         }
     }
 }
